@@ -1,0 +1,20 @@
+1. Download and install node.js
+2. Clone a angular project or start a new project
+3. npm install -g @angular/cli@latest ---- To install angular command line interface
+4. npm install (if it is a cloned project from github )
+5. ng new projectname if it is a new project
+6. ng build to build project
+7. Routes
+8. lazy loading
+9. Interface
+10. Directives
+11. Services
+12. Forms
+13. AuthGuard
+14. Pipe
+15. Input output
+16. Observables
+17. enum
+18. Spread operator
+19. Object loopthough with keyvalue pipe
+20. `` operator using for multi line with variable inside
