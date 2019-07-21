@@ -7,6 +7,7 @@ import { SharedModule } from '../shared/shared.module';
 import { RootSecondComponent } from './components/root-second/root-second.component';
 import { RootThirdComponent } from './components/root-third/root-third.component';
 import { ConfigModule } from '../config/config.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ConfigModule } from '../config/config.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    ConfigModule
+    ConfigModule,
+    HttpClientModule
     
   ],
   

@@ -3,15 +3,19 @@ import { CommonModule } from '@angular/common';
 import { ProductDefaultComponent } from './components/product-default/product-default.component';
 import { ProductViewComponent } from './components/product-view/product-view.component';
 import { Route, Routes, RouterModule } from '@angular/router';
-
+import { AdminGuard } from '../root/admin.guard';
 const routes:Routes=[
   {
     path:'',
-    component:ProductDefaultComponent
+    component:ProductDefaultComponent,
+    // canActivate:[AdminGuard],
+
   },
   {
     path:'view',
-    component:ProductViewComponent
+    component:ProductViewComponent,
+    // canActivate:[AdminGuard],
+
   }
 ]
 
@@ -19,7 +23,8 @@ const routes:Routes=[
   declarations: [ProductDefaultComponent,ProductViewComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    
   ]
 })
 export class ProductModule { }
